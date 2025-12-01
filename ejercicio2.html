@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nombre:hover{
+            background-color: rgb(138, 138, 255);
+            border-radius:3px;
+        }
+        #nombre{
+            width: 300px;
+        }
+        #primer{
+            width: 450px;
+        }
+        #segundo{
+            width: 450px;
+        }
+        #email{
+            width: 450px;;
+        }
+        #alta {
+    display: block;
+    margin-left: auto;   /* con esto se empuja a la derecha */
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #d1d1d1;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+
+ 
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>
+    <form action="procesar" method="post">
+        <h1>Formulario de alta </h1>
+        <label><strong>Nombre y apellidos</strong></label><br>
+        <input type="text" id="nombre" width="300px" name="nombre"><br>
+        <label form="nombre">Nombre</label><br>
+        <input type="text" id="primer" width="500px" name="primer apellido"><br>
+        <label form="primer apellido">Primer apellido</label><br>
+        <input type="text" id="segundo" width="500px" name="segundo apellido"><br>
+        <label for="segundo apellido" >Segundo apellido </label><br><br><br>
+        <label form="email"><strong>Email</strong></label><br>
+        <input type="email" id="email" name="email"><br><br><br>    
+        <input type="submit" id="alta" value="darme de alta"> 
+        </td>
+    </tr>
+    </form>
+    </table>
+</body>
+</html>
