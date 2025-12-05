@@ -7,9 +7,70 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <style type="text/css">
-    input{
+    #nombre{
        display: block; 
+       border-width: 2px;
     }
+    #apellido1{
+      display: block;
+      border-width: 2px;
+    }
+     #apellido2{
+      display: block;
+      border-width: 2px;
+    }
+    li {
+   display: inline-block;
+   width: 49%;
+   vertical-align: top;
+  }
+
+    #direccion{
+      
+      display: block;
+      border-width: 2px;
+
+    }
+#codigopostal,#municipio{
+  float: left;
+  display: inline-block;
+  width: 40%;
+}
+#provincia1, #pais1{
+
+  display: inline-block;
+  float: left;
+  width: 40%;
+
+}
+#municipio1,#codigopostal1{
+  width: 90%;
+  padding: 4px;
+  border-width: 2px;
+}
+#provincia, #pais{
+  width: 95%;
+  border-width: 2px;
+  padding: 4px;
+}
+.ayuda{
+  display: block;
+  float: left;
+  
+}
+#email{
+  border-width: 2px;
+}
+.titulo{
+  font-family:;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
 </style>
 </head>
 
@@ -48,38 +109,39 @@
   <div>
     <span>
       <input id="direccion" name="direccion" value="" />
-      <label for="direccion">Calle, número, piso, puerta</label>
+      <label for="direccion">Calle, número, piso, puerta</label><br>
     </span>
-
-    <span>
-      <input id="codigopostal" name="codigopostal" value="" />
+    <span id="codigopostal">
+      <input id="codigopostal1" value="" />
+      <br>
       <label for="codigopostal">Código postal</label>
     </span>
 
-    <span>
-      <input id="municipio" name="municipio" value="" />
+    <span id="municipio">
+      <input id="municipio1" name="municipio" value="" />
+      <br>
       <label for="municipio">Municipio</label>
     </span>
 
-    <span>
+    <span id="provincia1">
       <select id="provincia" name="provincia">
         <option value=""></option>
         <option value="provincia1">Provincia 1</option>
         <option value="provincia2">Provincia 2</option>
         <option value="provincia3">Provincia 3</option>
-      </select>
+      </select><br>
       <label for="provincia">Provincia</label>
     </span>
 
-    <span>
+    <span id="pais1">
       <select id="pais" name="pais">
         <option value=""></option>
         <option value="pais1">País 1</option>
         <option value="pais2">País 2</option>
         <option value="pais3">País 3</option>
-      </select>
+      </select><br>
       <label for="pais">País</label>
-    </span>
+    </span><br><br>
   </div>
 
   <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
