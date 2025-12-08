@@ -8,17 +8,20 @@
 
 <style type="text/css">
     #nombre{
+      width:20%;
        display: block; 
        border-width: 2px;
+      padding: 4px;
     }
-    #apellido1{
+   
+    #apellido1,#apellido2{
+      width:50%;
       display: block;
       border-width: 2px;
+      padding: 4px;
+      
     }
-     #apellido2{
-      display: block;
-      border-width: 2px;
-    }
+    
     li {
    display: inline-block;
    width: 49%;
@@ -56,10 +59,11 @@
 .ayuda{
   display: block;
   float: left;
-  
 }
 #email{
+  padding: 4px;
   border-width: 2px;
+  width:50%;
 }
 /*titulo*/
 .titulo{
@@ -67,7 +71,30 @@
   color: black;
   font-weight: bold;
 }
+#telefonofijo, #telefonomovil{
+  float: left;
+  display: inline-block;
+  width: 40%;
+}
+#telefonofijo1, #telefonomovil1{
+  width: 95%;
+  border-width: 2px;
+  padding: 4px;
+}
+#alta{
+   
+    margin-top: 30px;     /* Lo bajas */
+    margin-left: 170%;
+}
 
+
+/*no se si funcione creo, ya que no me deja retificarlo */
+.ayuda{
+  display: none;
+}
+input:invalid +  .ayuda{
+  display: block;
+}
 </style>
 </head>
 
@@ -83,7 +110,7 @@
   <div>
     <span>
       <input id="nombre" name="nombre" value="" />
-      <label for="nombre">Nombre</label>
+      <label for="nombre" >Nombre</label>
     </span>
 
     <span>
@@ -145,6 +172,7 @@
 </li>
 
 <li>
+  <br><br>
   <label class="titulo" for="email">Email</label>
 
   <div>
@@ -157,16 +185,17 @@
 </li>
 
 <li>
+  <br><br>
   <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
 
   <div>
-    <span>
-      <input id="telefonofijo" name="telefonofijo" value="" />
+    <span id="telefonofijo">
+      <input id="telefonofijo1" name="telefonofijo" value="" />
       <label for="telefonofijo">Fijo</label>
     </span>
 
-    <span>
-      <input id="telefonomovil" name="telefonomovil" value="" />
+    <span id="telefonomovil">
+      <input id="telefonomovil1" name="telefonomovil" value="" />
       <label for="telefonomovil">Móvil</label>
     </span>
   </div>
