@@ -24,7 +24,7 @@
     
     li {
    display: inline-block;
-   width: 49%;
+   width: 40%;
    vertical-align: top;
   }
 
@@ -82,17 +82,34 @@
   padding: 4px;
 }
 #alta{
-   
-    margin-top: 30px;     /* Lo bajas */
+  width: 150px;
+  height: 40px;
+    margin-top: 50px;     /* Lo bajas */
     margin-left: 170%;
+    clear: both; /* **IMPORTANTE**: Rompe el flujo de las columnas de arriba */
+   
+    
+  
+    overflow: hidden;
 }
+li:hover{
+  background-color: #FF9; 
+
+}
+input:hover{
+  background-color: #E6B700;
+}
+select:hover{
+  background-color: #E6B700;
+}
+
 
 
 /*no se si funcione creo, ya que no me deja retificarlo */
 .ayuda{
   display: none;
 }
-input:invalid +  .ayuda{
+input:invalid + .ayuda{
   display: block;
 }
 </style>
@@ -204,7 +221,7 @@ input:invalid +  .ayuda{
 </li>
 
 <li>
-  <input id="alta" type="submit" value="Darme de alta &rarr;" />
+  <input id="alta" type="submit" width="150px" value="Darme de alta &rarr;" />
 </li>
 
 </ul>
