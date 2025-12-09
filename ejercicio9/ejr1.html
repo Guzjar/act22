@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Barra de Navegación</title>
+    
+    <style>
+        
+        .navegacion {
+            
+            list-style: none; 
+            padding: 0;       
+            margin: 20px auto; 
+            width: 80%;       
+            max-width: 600px;
+            
+            
+            background-color: #e5e5e5; 
+            padding: 10px 15px;      
+            border-radius: 4px;      
+            
+           
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            
+          
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+        }
+        .navegacion a {
+            color: #333;           
+            font-weight: bold;     
+            text-decoration: none; /
+            font-size: 1.1em;      
+            transition: color 0.2s;
+        }
+        .navegacion a:hover {
+            color: #007bff; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul class="navegacion">
+        
+        <li class="anterior">
+            <a href="#">« Anterior</a>
+        </li>
+        
+        <li class="siguiente ">
+            <a href="#">Siguiente »</a>
+        </li>
+        
+    </ul>
+
+    
+</body>
+</html>
