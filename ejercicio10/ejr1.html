@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjetas de servicios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+.cards-wrapper {
+    width: 90%;
+    max-width: 960px; 
+    margin: 20px auto; 
+    padding: 10px 0;
+}
+
+.card {
+     
+    float: left; 
+    box-sizing: border-box; 
+    width: 30%;
+    margin-right: 2%; 
+    min-height: 180px; 
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.cards-wrapper .card:last-child {
+    margin-right: 0; 
+    /*El ancho es el mismo 30% ya que 30 + 30 + 30 + 2 + 2 = 94%  en esto tuve ayuda ya que no me dejaba colcolocarlo cuando lo tenia en la pantalla */
+    width: 30%; 
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.site-header, .site-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+</style>
+<body>
+  <header class="site-header">
+    <h1>Servicios de Desarrollo Web</h1>
+  </header>
+
+  <main>
+    <section class="cards-wrapper">
+      <article class="card card-destacada">
+        <span class="badge">Nuevo</span>
+        <h2>Diseño Responsive</h2>
+        <p>Maquetación adaptable a distintos dispositivos.</p>
+      </article>
+
+      <article class="card">
+        <h2>Optimización SEO</h2>
+        <p>Mejora del rendimiento y tiempos de carga.</p>
+      </article>
+
+      <article class="card">
+        <h2>Aplicaciones Web</h2>
+        <p>Desarrollo de aplicaciones modernas.</p>
+      </article>
+
+      <div class="clearfix"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 - Aula de Desarrollo Web</p>
+  </footer>
+</body>
+</html>
